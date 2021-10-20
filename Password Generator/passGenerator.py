@@ -3,11 +3,15 @@ import time as t
 from os import system
 print('length of password: ')
 ln = int(input())
-k = '1'
 print('****MENU****\n1. add capital\n2. add small\n3. add special character\n4. add numbers\nif you wish to include more than one, type the consecutive number space seperated')
-while ('1' in k) or ('2' in k) or ('3' in k) or ('4' in k):
-    print("Enter your choice: ")
-    k = input()
+print("Enter your choice: ")
+k = input()
+while 1:
+    if ('1' in k) or ('2' in k) or ('3' in k) or ('4' in k):
+        break
+    else:
+        print("Enter correct choice from the menu choice: ")
+        k = input()
 cap = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
        'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 sml = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
